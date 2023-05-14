@@ -6,29 +6,45 @@
 
 body {
   margin: 25px ;
-  /*background-color: FloralWhite;*/
-  background-image: radial-gradient(circle at 38.77% 91.9%, #ffedeb 0, #ffe6e8 8.33%, #ffdee5 16.67%, #ffd5e3 25%, #ffcbe1 33.33%, #fcc0df 41.67%, #f2b5de 50%, #e5abde 58.33%, #d7a3e0 66.67%, #c69de2 75%, #b498e5 83.33%, #9f96e7 91.67%, #8794e9 100%);
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 16%, rgba(255,29,0,1) 46%, rgba(255,0,0,0.9724264705882353) 62%, rgba(255,196,0,1) 82%, rgba(209,180,7,1) 90%, rgba(2,0,36,1) 97%);
   font-family:'Source Sans Pro', Inconsolata;
   font-size: var(--md);
 }
 .form-container{
   margin: 25px ;
+  border: 2px solid rgb(111,41,97);
+  border-radius: .5em;
 }
 /*.card{
     display: grid;
   grid-template-rows: auto auto;
   grid-gap: 10px;
 }*/
-/*card > #login{
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-gap: 10px;
-}*/
-#login > .form_1 >label{
+.form_1{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+#login > .form_1 label{
   font-size: var(--md);
   font-weight: bold;
 }
+#login > .form_1 >input{
+  border-radius: 10%;
+  height: 30px;
+  width: 180px;
+}
+/*#login > .form_1 >input:hover{
+  color:rgb(43, 255, 0);
+}*/
+.login-button{
+  border-radius:10%;
+  height: 30px;
+  width: 70px;
+  margin-top:10px;
 
+}
 h1{
   font-size: var(--lg);
   font-weight: bold;
@@ -36,6 +52,10 @@ h1{
 h2{
   font-size: var(--md);
   font-weight: bold;
+}
+.board{
+  display:flex;
+
 }
 #emblem1, #emblem2, #emblem3, #emblem4{
     width: 150px;

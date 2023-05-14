@@ -12,17 +12,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <nav>
-          <a href="#login" id="navlog">Login</a>
-          <a href="#home_id" id="navhome">Home</a>
-          <a href="#who_we_are" id="navwho" >Who we are </a>
-          <a href="#history" id="navhys">History</a>
-          <a href="#contact-us" id="navcont">Contact us</a>
-        </nav>
-      </header>
+      <main class="form-container"> <!--INICIO CONTENENDOR ************************************************* -->
+        <header>
+          <nav>
+            <a href="#login" id="navlog">Login</a>
+            <a href="#home_id" id="navhome">Home</a>
+            <a href="#who_we_are" id="navwho" >Who we are </a>
+            <a href="#history" id="navhys">History</a>
+            <a href="#contact-us" id="navcont">Contact us</a>
+          </nav>
+        </header>
 
-      <article class="form-container"> <!--INICIO CONTENENDOR ************************************************* -->
+      
 <!--*************************************************Inicio primera seccion: Login******************************************************************* -->
         <section class= "card"  id="login">
           <h1 class="title">Log in</h1>
@@ -32,15 +33,45 @@
             <input type="username" id="username" placeholder="Cdavid99" class="input-user">
             <label for="password" class="label">Password</label>
             <input type="password" id="new-password" placeholder="*********" class="input-password">
-            <input type="submit" value="Confirm" class="primary-button login-button">
-          </form>  
+            <button type="submit" value="true" class="login-button">Login</button>
+          </form>
         </section>
 <!--*************************************************Inicio segunda seccion: Home******************************************************************* -->
         <section class= "card"  id="home_id">
-          <p>
+          <div  class= "board">
 
+            <figure class="prevmatch">
+              <img src="../icons/iconbarca.png" id="icon-barca" alt="iconBarca">
+            </figure>
+            <h3> VS </h3>
+            <figure class="prevmatch">
+              <img src="../icons/iconrm.png" id="icon-rm" alt="iconrm">
+            </figure>
+<!-- ********************************************************************************************* -->
+            <figure class="nextmatch">
+              <img src="../icons/iconbarca.png" id="icon-barca1" alt="iconBarca">
+            </figure>
+            <h3> VS </h3>
+            <figure>
+              <img src="../icons/iconrm.png" id="icon-rm1" alt="iconrm">
+            </figure>
+<!-- *******************************//in course************************************************************** 
+            <figure>
+              <img src="../icons/iconbarca.png" id="icon-barca2" alt="iconBarca">
+            </figure>
+            <h3> VS </h3>
+            <figure>
+              <img src="../icons/iconrm.png" id="icon-rm2" alt="iconrm">
+            </figure>-->
+<!-- ************************************************************************************ -->
+          </div>
+<!-- ******************************Inicio comentarios****************************************************** -->
+          <form action="coments" id="form_2" method="POST">
+            <label class="coment_label" >Coment here culé:</label>
+            <textarea id="coment_id" name="coment" rows="5" cols="40"></textarea>
+            <input type="submit" value="Send">
+          </form>
 
-          </p>
           <figure class="emblem">
             <img src="../images/emblem1.gif" id="emblem1" alt="FC Barcelona emblem1">
             <img src="../images/emblem2.gif" id="emblem2" alt="FC Barcelona emblem2">
@@ -181,6 +212,6 @@
           </figure>
         </footer>
 
-      </article><!--FIN CONTENENDOR -->
+      </main><!--FIN CONTENENDOR -->
     </body>
 </html>
