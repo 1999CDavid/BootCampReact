@@ -6,40 +6,59 @@
         <title>Fan page FC Barcelona</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-      <main class="form-container"> <!--INICIO CONTENENDOR ************************************************* -->
-        <header>
-          <nav>
-            <a href="#login" id="navlog">Login</a>
-            <a href="#home_id" id="navhome">Home</a>
-            <a href="#who_we_are" id="navwho" >Who we are </a>
-            <a href="#history" id="navhys">History</a>
-            <a href="#contact-us" id="navcont">Contact us</a>
-          </nav>
-        </header>
 
-      
-<!--*************************************************Inicio primera seccion: Login******************************************************************* -->
-        <section class= "card"  id="login">
-          <h1 class="title">Log in</h1>
-          <h2 class="subtitle">Enter username and password</h2>
-          <form class="form_1">
-            <label for="username" class="label">User</label>
-            <input type="username" id="username" placeholder="Cdavid99" class="input-user">
-            <label for="password" class="label">Password</label>
-            <input type="password" id="new-password" placeholder="*********" class="input-password">
-            <button type="submit" value="true" class="login-button">Login</button>
-          </form>
-        </section>
-<!--*************************************************Inicio segunda seccion: Home******************************************************************* -->
-        <section class= "card"  id="home_id">
-          <div  class= "board">
+      <header class="headHome"><!-- Header del home -->
+        <nav class="menuoption menunav_1">
+          <a href="#news" id="navnews">Barca News</a>
+          <a href="#who_we_are" id="navwho" >Who we are </a>
+          <a href="#history" id="navhys">History</a>
+          <a href="#contact-us" id="navcont">Contact us</a>
+        </nav>
 
+        <nav class="menuoption menunav_2">
+          <a href="Sign_in.html" target="_blank" id="navlog">Sign in</a>
+          </picture class="symbol" id="SymbolMenu"><!-- ************* -->
+            <img src="../icons/iconbarca.png" class="iconBarca iconBarcaHeader">
+            <legend>FanBarcaLatino</legend>
+          </picture>
+        </nav>
+        
+        
+
+      </header>
+
+
+      <main class="form-container"> <!--INICIO CONTENENDOR MAIN ************************************************* -->
+<!--*************************************************Inicio primera seccion: BARCA-NEWS******************************************************************* -->
+        <section class="card" >
+          <h1 id="titleNews"> BARCA NEWS <h1>
+            <figure class="walk_news">
+              <picture>
+                <img src="../icons/prev.png">        
+              </picture>
+              <picture>
+                <img src="https://www.fcbarcelona.com/photo-resources/2023/05/14/43e8f195-7074-4550-b392-96ec8148cee9/_GP24507_1.JPG?width=1200&height=750" id= "newsimg1" alt="BarcaChampion1">
+              </picture>
+              <picture>
+                <img src="https://www.fcbarcelona.com/photo-resources/2023/05/14/574dd210-6a0d-4543-a954-aa041d440a8f/_GP24398.jpg?width=1200&height=750" id= "newsimg2" alt="BarcaChampion2">
+              </picture>
+              <picture>
+                <img src="../icons/next.png">
+              </picture>
+            </figure>
+          
+        </section> 
+
+<!--*************************************************Inicio segunda seccion: matches******************************************************************* -->
+        <section class= "card" id="matches"> 
+          <fieldset  class= "match prev_match">
+            <legend>Previous Match</legend>
             <figure class="prevmatch">
               <img src="../icons/iconbarca.png" id="icon-barca" alt="iconBarca">
             </figure>
@@ -47,84 +66,18 @@
             <figure class="prevmatch">
               <img src="../icons/iconrm.png" id="icon-rm" alt="iconrm">
             </figure>
-<!-- ********************************************************************************************* -->
-            <figure class="nextmatch">
-              <img src="../icons/iconbarca.png" id="icon-barca1" alt="iconBarca">
+          </fieldset>
+
+          <fieldset  class= "match next_match">
+            <legend>Previous Match</legend>
+            <figure class="prevmatch">
+              <img src="../icons/iconbarca.png" id="icon-barca" alt="iconBarca">
             </figure>
             <h3> VS </h3>
-            <figure>
-              <img src="../icons/iconrm.png" id="icon-rm1" alt="iconrm">
+            <figure class="prevmatch">
+              <img src="../icons/iconrm.png" id="icon-rm" alt="iconrm">
             </figure>
-<!-- *******************************//in course************************************************************** 
-            <figure>
-              <img src="../icons/iconbarca.png" id="icon-barca2" alt="iconBarca">
-            </figure>
-            <h3> VS </h3>
-            <figure>
-              <img src="../icons/iconrm.png" id="icon-rm2" alt="iconrm">
-            </figure>-->
-<!-- ************************************************************************************ -->
-          </div>
-<!-- ******************************Inicio comentarios****************************************************** -->
-          <form action="coments" id="form_2" method="POST">
-            <label class="coment_label" >Coment here culé:</label>
-            <textarea id="coment_id" name="coment" rows="5" cols="40"></textarea>
-            <input type="submit" value="Send">
-          </form>
-
-          <figure class="emblem">
-            <img src="../images/emblem1.gif" id="emblem1" alt="FC Barcelona emblem1">
-            <img src="../images/emblem2.gif" id="emblem2" alt="FC Barcelona emblem2">
-            <img src="../images/emblem3.gif" id="emblem3" alt="FC Barcelona emblem3">
-            <img src="../images/emblem4.gif" id="emblem4" alt="FC Barcelona emblem4">
-          </figure>
-
-          <h2 class="subtitle2">Are you a true fan ?</h2>
-
-          <form action="/" class="form-2"> <!--INICIO FORM 2 -->
-            <ul>
-              <li>
-                <label for="ask-1" class="label">Which Barcelona player holds the record for the most games played with the team?</label>
-                <input type="input-ask1" id="#1" class="input-ask1">
-                <!--¿Qué jugador del Barcelona tiene el récord de más partidos jugados con el equipo?-->
-              </li>
-              
-              <li>
-                <label for="ask-1" class="label">In what year was Futbol Club Barcelona founded?</label>
-                <input type="input-ask1" id="#1" class="input-ask1">
-                <!--¿En qué año se fundó el Futbol Club Barcelona?-->
-              </li>
-              
-              <li>
-                <label for="ask-2" class="label">What is Barcelona's nickname?</label>
-                <input type="input-ask2" id="#2" class="input-ask2">
-                <!--¿Cuál es el apodo del Barcelona?-->
-              </li>
-
-              <li>
-                <label for="ask-1" class="label">What is the name of the Barcelona stadium?</label>
-                <input type="input-ask3" id="#3" class="input-ask3">
-                <!--¿Cuál es el nombre del estadio del Barcelona?-->
-              </li>
-
-              <li>
-                <label for="ask-1" class="label">Who is the top scorer in the history of Barcelona?</label>
-                <input type="input-ask4" id="#4" class="input-ask4">
-                <!--¿Quién es el máximo goleador en la historia del Barcelona?-->
-              </li>
-
-              <li>
-                <label for="ask-5" class="label">Who is the current coach of Barcelona?</label>
-                <input type="input-ask5" id="#5" class="input-ask5">
-                <!--¿Quién es el entrenador actual del Barcelona?-->
-              </li>
-              <li>
-                <label for="ask-6" class="label">Who was the first Barcelona player to win the Ballon d'Or?</label>
-                <input type="input-ask6" id="#6" class="input-ask6">
-                <!--¿Quién fue el primer jugador del Barcelona en ganar el Balón de Oro?-->
-              </li>
-            </ul>
-          </form><!--FIN FORM 2 -->
+          </fieldset>
         </section>
 <!--*************************************************Inicio segunda seccion: Who we are******************************************************************* -->
         <section class="card" id="who_we_are">
@@ -155,7 +108,7 @@
 
         </section>
 <!--*************************************************Inicio tercera seccion: Historia******************************************************************* -->
-        <section class="card" id="history">
+        <section class="card card4" id="history">
           <h1>History</h1>
 
         <p>Less than a month ago, a group of friends gathered in a bar to watch FC Barcelona play Real Madrid. 
