@@ -1,0 +1,185 @@
+:root{
+  --sm: 17px;
+  --md: 20px;
+  --lg: 30px;
+  --rb1: linear-gradient(90deg,#cd122d 0,#154284)
+}
+
+body {
+  background: linear-gradient(90deg,#cd122d 0,#154284);
+  color: #fdc52c;
+  font-family:'Source Sans Pro', Inconsolata;
+  font-size: var(--md);
+  padding: 0%;
+  margin: 0%;
+}
+
+/*Estilos aplicados al header de la página*/
+.headHome{
+  display:flex;
+  justify-content:space-between;
+  width: 100%;
+  height: 50px;
+  background:#181733;
+  align-items: center;
+}
+.menunav_1{
+  display: flex;
+  margin-left: 10px;
+  gap:70px;
+  
+}
+a{
+  text-decoration:none;
+}
+
+a:any-link {
+  color: #fdc52c;
+  cursor: pointer;
+  /*text-decoration:underline;
+  border: 1px solid black;*/
+}
+a:hover {
+  color: #8c1a17;
+  border-bottom: 3px solid #cd122d;
+}
+.menunav_2{
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  margin-right: 10px;
+  gap:20px;
+
+}
+.symbol{
+  height: 45px;
+}
+.iconBarcaHeader{
+  cursor: pointer;
+}
+/*********************************************************************/
+/*Estilos aplicados al la seccion news*/
+#titleNews{
+  margin-left: 20px;
+}
+.walk_news{
+  display: grid;
+  grid-template-columns:50px 1fr 1fr 50px;
+  align-items: center;
+  justify-items: center;
+  margin: 20px;
+
+}
+#newsimg1,#newsimg2{
+  height: 450px;
+  width: 550px;
+  gap:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+/*background: linear-gradient(90deg,#cd122d,#154284);
+  background: linear-gradient(90deg,#8c1a17,#cd122d);
+  background: #181733;
+
+
+
+
+
+
+.form-container{
+  margin: 25px ;
+  border: 2px solid rgb(111,41,97);
+  border-radius: .5em;
+}
+/*.card{
+    display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+.form_1{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+#login > .form_1 label{
+  font-size: var(--md);
+  font-weight: bold;
+}
+#login > .form_1 {
+  border-radius: 10%;
+  padding: 2%;
+}
+#login > .form_1 > input{
+  border-radius: 11px;
+  width: 180px;
+  height: 30px;
+}
+/*#login > .form_1 >input:hover{
+  color:rgb(43, 255, 0);
+}
+.login-button{
+  border-radius:10%;
+  height: 30px;
+  width: 70px;
+  margin-top:10px;
+
+}
+h1{
+  font-size: var(--lg);
+  font-weight: bold;
+}
+h2{
+  font-size: var(--md);
+  font-weight: bold;
+}
+.board{
+  display:flex;
+
+}
+#emblem1, #emblem2, #emblem3, #emblem4{
+    width: 150px;
+    height: 150px;
+    /*margin-bottom: 48px;
+}
+.icon-footer{
+  width: 30px;
+  height: 30px;
+}
+
+.contact-us > ul{
+  font-weight: bold;
+  font-size: var(--sm);
+}
+*/
