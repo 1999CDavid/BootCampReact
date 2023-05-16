@@ -1,4 +1,100 @@
-/*.card1 > form > input:focus-visible {
-    outline-offset: 0px;
-    color: blue;
-}*/
+:root{
+    --sm: 20px;
+    --md: 25px;
+    --mdm: 30px;
+    --lg:45px
+  }
+
+body{
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(90deg,#cd122d 0,#154284);
+}
+main{
+    border: 1px solid #fdc52c;
+    background:rgb(24, 23, 51, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+head{
+    display:inline;
+    justify-items:center ;
+}
+.symbol{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fdc52c;
+}
+.symbol > img{
+    width:60px ;
+    height:60px;
+}
+
+.Sign_in{
+    border-top: 2px solid #fdc52c;
+    border-bottom: 2px solid #fdc52c;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right:10px;
+    width: 500px;
+    height: 400px;
+    margin: 0 30px 30px 30px;
+    color:#fdc52c;
+}
+.title{
+    font-size: var(--mdm);
+    margin-top:0;
+    margin-bottom:20px;
+}
+.subtitle{
+    font-size: var(--md);
+}
+
+.formSign_in{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formSign_in > .form_p{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.formSign_in > .form_p > label{
+    font-size: var(--sm);
+}
+.formSign_in > .form_p > input{
+    height:30px ;
+    width: 250px;
+    border-radius: 10px;
+    border-color: rgb(180, 180, 180);
+}
+.formSign_in > .form_p > .login-button{
+    height:30px ;
+    width: 70px;
+    border-radius:5px ;
+    background-color: #fdc52c;
+    border-color: #fdc52c;
+    font-weight: bold;
+}
+#navforgetpassw{
+    display: flex;
+    justify-content: end;
+    color:#fdc52c;
+    margin:0px;
+}
+footer > .navFooter{
+    display: inline-flex;
+    gap:20px
+}
+footer > .navFooter > a{
+    color:#fdc52c;
+}

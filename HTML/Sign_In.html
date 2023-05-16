@@ -9,40 +9,59 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS/Sign_in.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <figure class="symbol"><!-- ************* -->
-          <img src="../icons/iconbarca.png" class="iconBarca iconBarcaHeader">
-          <legend>FanBarcaLatino</legend>
-        </figure>
-      </header>
+      <main>
+<!--Seccion1***********************************************-->        
+        <header class="head">
+          <figure class="symbol"><!-- ************* -->
+            <img src="../icons/iconbarca.png" class="iconBarca iconBarcaHeader">
+            <legend>FanBarcaLatino</legend>
+          </figure>
+        </header>
+<!--Seccion1***********************************************-->        
+        <section class= "Sign_in">
 
-      <section class= "Sign_in">
-          <form class="FormSign_in">
-            <h1 class="title">Sign in</h1>
-            <h2 class="subtitle">Enter username and password</h2>
-            <label for="username" class="label">User</label>
-            <input type="username" id="username" placeholder="@example" class="input-user" /*required*/>
-            <label for="password" class="label">Password</label>
-            <input type="password" id="new-password" placeholder="*******************" class="input-password" >
-            <button type="submit"  value="true" class="login-button" formaction="../HTML/profile.html">Next</button>
+          <h1 class="title">Sign in</h1>
+
+          <form class="formSign_in">
+
+            <h2 class="subtitle">Enter username and password</h2> 
+
+            <p class=form_p>
+              <label for="username" class="label label1">User</label>
+              <input type="username" placeholder="@example" class="input-user label1" /*required*/>
+            </p>
+
+            <p class=form_p>
+              <label for="password" class="label label2">Password</label>
+              <input type="password" placeholder="*******************" class="input-password label2" >  
+            </p>
+
+            <p class=form_p>
+              <button type="submit"  value="true" class="login-button" formaction="../HTML/profile.html">Next</button>
+            </p>
+
           </form>
-          <div>
-            <a href="createAccount.html" target="_blank" id="navcont">forget password</a>
-          </div>
-      </section>
-      <footer>
-        <div>
-          <a href="createAccount.html" target="_blank" id="navcont">Create account</a>
-        </div>
-        
-        <div>
-          <a href="createAccount.html" target="_blank" id="navcont">Community rules</a>
-        </div>
 
-      </footer>
+          <nav>
+            <a href="createAccount.html" target="_blank" id="navforgetpassw">forget password</a> 
+          </nav>
 
-        <script src="" async defer></script>
+        </section>
+<!--Seccion1***********************************************-->        
+        <footer>
+          <nav class="navFooter">
+            <a href="createAccount.html" target="_blank" id="navcont">Create account</a>
+            <a href="createAccount.html" target="_blank" id="navcont">Community rules</a>
+          </nav>
+        </footer>
+
+      </main>
+
     </body>
+
 </html>
