@@ -6,7 +6,7 @@
         <title>Fan page FC Barcelona</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/home.css">
+        <link rel="stylesheet" href="../BootCampReact/CSS/home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -14,17 +14,19 @@
     <body>
 
       <header class="headHome"><!-- Header del home -->
-        <nav class="menuoption menunav_1">
-          <a href="#news" id="navnews">Barca News</a>
-          <a href="#who_we_are" id="navwho" >Who we are </a>
-          <a href="#history" id="navhys">Our History</a>
-          <a href="#contact-us" id="navcont">Contact us</a>
+        <nav class="menunav_1">
+          <ul class= "menuoption">
+            <li><a href="#news" id="navnews">Barca News</a></li>
+            <li><a href="#who_we_are" id="navwho" >Who we are </a></li>
+            <li><a href="#history" id="navhys">Our History</a></li>
+            <li><a href="#contact-us" id="navcont">Contact us</a></li>
+          </ul>
         </nav>
 
         <nav class="menuoption menunav_2">
-          <a href="Sign_in.html" target="_blank" id="navlog">Sign in</a>
+          <a href="../BootCampReact/Sign_In.html" target="_blank" id="navlog">Sign in</a>
           <picture class="symbol" id="SymbolMenu"><!-- ************* -->
-            <img src="../icons/iconbarca.png" class="iconBarca iconBarcaHeader">
+            <img src="../BootCampReact/icons/iconbarca.png" class="iconBarca iconBarcaHeader">
             <legend>FanBarcaLatino</legend>
           </picture>
         </nav>
@@ -32,25 +34,21 @@
 
       <main class="form-container"> <!--INICIO CONTENENDOR MAIN ************************************************* -->
 <!--*************************************************Inicio primera seccion: BARCA-NEWS******************************************************************* -->
-        <h1 class="titles"> BARCA NEWS <h1>
-        <section class="card news" >
-          <h2 class="subtitles">"We are the champions": said Xavi. 
-             Barcelona's first title post Leo Messi's era represents the beginning of a new stage.</h2>
-          <figure class="walk_news">
-            <picture>
-              <img src="../icons/prev.png" id="iconPrev">        
-            </picture>
-            <picture>
-              <img src="https://www.fcbarcelona.com/photo-resources/2023/05/14/43e8f195-7074-4550-b392-96ec8148cee9/_GP24507_1.JPG?width=1200&height=750" id= "newsimg1" alt="BarcaChampion1">
-            </picture>
-            <picture>
-              <img src="https://www.fcbarcelona.com/photo-resources/2023/05/14/574dd210-6a0d-4543-a954-aa041d440a8f/_GP24398.jpg?width=1200&height=750" id= "newsimg2" alt="BarcaChampion2">
-            </picture>
-            <picture>
-              <img src="../icons/next.png" id="iconNext">
-            </picture>
-          </figure>
-        </section> 
+        <h1 class="titles">BARCA NEWS</h1>
+        <section class="card news">
+          <h2 class="subtitles">"This week was work and another joy for Barcelona. We are champions again!": said Xavi. </h2>
+          <article class="slide_news ">
+            <figure class="slide">
+              <img src="https://www.fcbarcelona.com/photo-resources/2023/05/26/92a7ce20-6207-4b58-8cf8-fcb193a36183/2023-05-26_ENTRENAMENTPRIMEREQUIP_44.JPG?width=1200&height=750" alt="il mister">
+            </figure>
+            <figure class="slide">
+              <img src="https://www.fcbarcelona.com/photo-resources/2023/05/26/c21e0abc-8a93-4a42-825c-a2fe88e9879f/2023-05-26_ENTRENAMENTPRIMEREQUIP_45.JPG?width=1200&height=750" alt="BarcaChampion2">
+            </figure>
+            <figure class="slide">
+              <img src="https://www.fcbarcelona.com/photo-resources/2023/05/14/574dd210-6a0d-4543-a954-aa041d440a8f/_GP24398.jpg?width=1200&height=750" alt="BarcaChampion2">
+            </figure>
+          </article>
+        </section>
 
 <!--*************************************************Inicio segunda seccion: matches******************************************************************* -->
         <h1 class="titles"> BARCA MATCHES <h1>
@@ -58,28 +56,50 @@
           <fieldset  class= "match prev_match">
             <legend>Previous Match</legend>
             <figure class="">
-              <img src="../icons/Iconespanyol.png" class=iconTeam alt="iconBarca">
+              <img src="../BootCampReact/icons/Iconespanyol.png" class=iconTeam alt="iconBarca">
             </figure>
             <h3> VS </h3>
             <figure class="">
-              <img src="../icons/iconbarca.png" class=iconTeam alt="iconBarca">
+              <img src="../BootCampReact/icons/iconbarca.png" class=iconTeam alt="iconBarca">
             </figure>
           </fieldset>
 
           <fieldset  class= "match next_match">
             <legend>Next Match</legend>
             <figure class="prevmatch">
-              <img src="../icons/iconbarca.png" class=iconTeam alt="iconBarca">
+              <img src="../BootCampReact/icons/iconbarca.png" class=iconTeam alt="iconBarca">
             </figure>
             <h3> VS </h3>
             <figure class="prevmatch">
-              <img src="../icons/iconrm.png" class=iconTeam alt="iconrm">
+              <img src="../BootCampReact/icons/iconrm.png" class=iconTeam alt="iconrm">
             </figure>
           </fieldset>
         </section>
-<!--*************************************************Inicio segunda seccion: Who we are******************************************************************* -->
+<!--*************************************************Inicio segunda seccion: Jugadores de la fecha******************************************************************* -->
+        <h1 class="titles"> PLAYERS MVP'S  <h1>
+        <section class="card grid-container">
+          <figure class="grid-item">
+            <img src="https://www.elfinanciero.com.mx/resizer/5zRQX2RSHZ3g7_-uDkrbz84AfQM=/1600x0/filters:format(jpg):quality(70):focal(586x124:596x134)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/264U5JWVT5AG7AKXISWKXSO3AU.jpg" alt="Sergio">
+            <figcaption>The #5 that changed history.See you soon captain</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img src="https://www.fcbarcelona.com/photo-resources/2022/11/02/85247947-27dc-488c-a6cb-d81c5e391559/09-ROBERT_LEWANDOWSKI.jpg?width=1200&height=750" alt="Lewi">
+            <figcaption>your smile is our smile lewi, barcaLatino's favorite</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img src="https://i.pinimg.com/originals/bd/19/39/bd1939abce5b1b6f59039e3f15dd7dee.jpg" alt="Marc">
+            <figcaption>We give 100 grand to whoever can score</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img src="https://d3nfwcxd527z59.cloudfront.net/content/uploads/2023/02/13105051/Araujo-722x360.jpg" alt="Ronald">
+            <figcaption>The heir to the tape, without a doubt, the favorite of the people.</figcaption>
+          </figure>
+          <!-- Repite los elementos anteriores para las otras imágenes -->
+        </section>
+
+<!--*************************************************Inicio tercera seccion: Who we are******************************************************************* -->
         <h1 class="titles"> WHO ARE WE  <h1>
-        <section class="card who_we_are">
+        <section class="card" id="who_we_are">
           <p>
             We are a group passionate about soccer and, in particular, FC Barcelona. 
             We came together because of our admiration and love for this team, which 
@@ -127,27 +147,26 @@
           </p>
         </section>    
 <!--*************************************************Footer: contáctanos******************************************************************* -->
-        <figure class="figurefooter">
-          <h1 class="titles titleFooter">Contact us</h1>
-          <img src="../images/ronaldinhobye.gif"  alt="Ronaldinho bye">             
-        </figure>        
-        <footer class="contact-us">
-          <ul class="footer-ul">
-            <li>
-                <img src="../icons/facebookicon.png" class="icon-footer" alt="Ronaldinho bye">
-                <legend>FanBarcalatino</legend>
-            </li>
-            <li>
-                <img src="../icons/instagramicon.png" class="icon-footer" alt="Ronaldinho bye">
-                <legend>@fanBarcalatino</legend>
-            </li>
-            <li>
-                <img src="../icons/twicon.png" class="icon-footer" alt="Ronaldinho bye">
-                <legend>@fanBarcalatinotw</legend>
-            </li>
-          </ul>
-        </footer>
-
       </main><!--FIN CONTENENDOR -->
+      <h1 class="titles titleFooter">Contact us</h1>
+      <figure class="figurefooter">
+        <img src="../BootCampReact/images/ronaldinhobye.gif"  alt="Ronaldinho bye">
+      </figure>
+      <footer class="contact-us">
+        <ul class="footer-ul">
+          <li>
+              <img src="../BootCampReact/icons/facebookicon.png" class="icon-footer" alt="Ronaldinho bye">
+              <legend>FanBarcalatino</legend>
+          </li>
+          <li>
+              <img src="../BootCampReact/icons/instagramicon.png" class="icon-footer" alt="Ronaldinho bye">
+              <legend>@fanBarcalatino</legend>
+          </li>
+          <li>
+              <img src="../BootCampReact/icons/twicon.png" class="icon-footer" alt="Ronaldinho bye">
+              <legend>@fanBarcalatinotw</legend>
+          </li>
+        </ul>
+      </footer>
     </body>
 </html>
