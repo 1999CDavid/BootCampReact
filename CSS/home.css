@@ -26,12 +26,16 @@ main{
   background:#181733;
   align-items: center;
 }
-.menunav_1{
+.menuoption{
   display: flex;
   margin-left: 20px;
   gap:70px;
   
 }
+.menunav_1 > .menuoption > li {
+  list-style-type:none;
+}
+
 a{
   text-decoration:none;
   color: #fdc52c;
@@ -62,6 +66,7 @@ a:hover {
   width: 35px;
   margin-bottom: 0px;
   gap: 0px;
+  object-fit: cover;
 }
 .symbol > legend{
   font-size: 10px;
@@ -95,30 +100,68 @@ a:hover {
 
 /*******ESTILOS APLICADOS A LA SECCION: NEWS**************************************************************/
 
-.walk_news{
+.news {
+  width: 82%;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 0;
+}
+
+.slide_news {
+  display: flex;
+  transition: 1s ease;
+  height: 530px;
+  animation: slide 70s linear infinite;
+}
+
+.slide_news:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  flex: 0 0 95%;
+  margin: 0;
+  padding: 0;
+}
+
+.slide > img {
+  height: 120%;
+  width: 100%;
+  /*object-fit:cover;*/
+}
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  
+  33.33% {
+    transform: translateX(-100%);
+  }
+  
+  66.66% {
+    transform: translateX(-200%);
+}
+}
+/*******ESTILOS APLICADOS A LA SECCION: Best player of a week**************************************************************/
+.grid-container {
   display: grid;
-  grid-template-columns:25px 1fr 1fr 25px;
-  align-items: center;
-  justify-items: center;
-  padding: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 60px;
+
 }
-.walk_news >picture{
-  margin:0%;
-  padding: 0px;
-  justify-content: center;
-  justify-self: center;
+
+.grid-item {
+  text-align: center;
 }
-#newsimg1,#newsimg2{
-  height: 500px;
-  width: 520px;
-  position: inherit;
-  z-index:10;
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-#iconNext, #iconPrev{
-  background-color:rgba(220, 223, 43, 0.5);
-  position: relative;
-  z-index:1;
-  cursor: pointer;
+figcaption{
+  font-size:var(--sm);
 }
 
 /*******ESTILOS APLICADOS A LA SECCION: MATCHES**************************************************************/
@@ -144,7 +187,11 @@ a:hover {
   font-weight:lighter;
   font-size: var(--sm);
 }
+/*******ESTILOS APLICADOS AL WHO ARE**************************************************************/
 
+#who_we_are > p{
+  font-weight: lighter;
+}
 /*******ESTILOS APLICADOS AL FOOTER**************************************************************/
 .figurefooter{
   display:inline-flex;
@@ -168,7 +215,6 @@ a:hover {
 .footer-ul > li{
   display: inline-flex;
   align-items: center;
-  /*margin: 20px 15px 20px 15px;*/
   gap: 10px;
 }
 
@@ -180,6 +226,40 @@ a:hover {
 .footer-ul > li > legend{
   font-size: var(--md);
 }
+/* Medias*/
+/* Estilos para Phones */
+@media (max-width: 640px) {
+  .titles {
+    font-size: 24px;
+  }
+  .menunav_1,
+  .menunav_2 {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titles {
+    font-size: 32px;
+  }
+  .card{
+    margin-bottom: 10px;
+  }
+
+  .grid-item img {
+    width: 150px;
+    height: 150px;
+  }
+  .grid-item > figcaption {
+    font-size: var(--sm);
+    font-weight: lighter;
+    margin-bottom: 10px;
+  }
+
+}
 
 
 
@@ -190,13 +270,6 @@ a:hover {
 
 
 
-
-
-
-
-/*background: linear-gradient(90deg,#cd122d,#154284);
-  background: linear-gradient(90deg,#8c1a17,#cd122d);
-  background: #181733;*/
 
 
 
