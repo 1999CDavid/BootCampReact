@@ -68,7 +68,7 @@ a:hover {
   gap: 0px;
   object-fit: cover;
 }
-.symbol > legend{
+.symbol > figcaption{
   font-size: 10px;
   margin-top:0px;
   gap: 0px;
@@ -230,25 +230,32 @@ figcaption{
 /* Estilos para Phones */
 @media (max-width: 640px) {
   .titles {
-    font-size: 24px;
+    font-size: var(--sm);
   }
-  .menunav_1,
-  .menunav_2 {
-    display: block;
-    text-align: center;
+  .menunav_1 {
+    display:none;
+  }
+  .menunav_2{
+    display: inline-flex;
+    align-content: space-between;
+
   }
 
 }
-
 /* Estilos para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 640px) and (max-width: 880px) {
   .titles {
     font-size: 32px;
   }
   .card{
     margin-bottom: 10px;
   }
-
+  .menunav_1 {
+    display:none;
+  }
+  .menunav_2{
+    align-content:space-between;
+  }
   .grid-item img {
     width: 150px;
     height: 150px;
